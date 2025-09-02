@@ -1,10 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { MyComponent, AnotherComponent } from './components/components'
+import Mycomo from './components/mycom';
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World!</h1>
+      <MyComponent/>
+      <AnotherComponent/>
+      <Mycomo/>
     </div>
   );
 }

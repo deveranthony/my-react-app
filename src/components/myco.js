@@ -20,7 +20,7 @@ export function Counter() {
             <p>Count:{color} {count}</p>
             <input onChange={(e) => setColor(e.target.value)}></input>
             <button onClick={(e) => setCount(count+1)}>Increment</button>
-            <button onClick={(e) => setColor("blue")}>blue</button>
+            <button onClick={(e) => setColor("yellow")}>blue</button>
         </div>
     )
 }

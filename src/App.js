@@ -1,18 +1,38 @@
+import "./App.css"
+import { useState } from "react";
 
-export function Square(){
-  return(
-    <>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-      <button className="square">X</button>
-    </>
-  )
+function Square() {
+  const [value, setValue] = useState(null);
+  function handleClicked(){
+    setValue('X');
+  }
+  return (
+    <button
+     className="square"
+     onClick={handleClicked}
+    > 
+      {value}
+    </button>);
 }
 
-export default Square
+export default function Board() {
+  return (
+    <>
+      <div className="board-row">
+        <Square/>
+        <Square/>
+        <Square/>
+      </div>
+      <div className="board-row">
+        <Square/>
+        <Square/>
+        <Square/>
+      </div>
+      <div className="board-row">
+        <Square/>
+        <Square/>
+        <Square/>
+      </div>
+    </>
+  );
+}

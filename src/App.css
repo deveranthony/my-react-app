@@ -3,5 +3,8 @@
   height: 80px;
   font-size: 40px;
   box-decoration-break: unset;
-  
+}
+
+.board-row{
+  display: flex;
 }
